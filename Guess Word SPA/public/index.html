@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="wordGame.css"/>
+    <title>Word Guess Game</title>
+    </head>
+    <body>
+        <div class="record-panel">
+            <div class="turns">
+                <div>
+                    <button class="start-game">lets Start!</button>
+                    
+                    <p class="turns-number">Total Number of Turns: 0</p>
+                    <p class="code-number">Your code number is: </p>
+                    <p class="invalid-repeat"></p>
+                </div>
+                <div class="new-guess"> 
+                    <div>
+                        <input class="guess-input" value="" placeholder="Please enter your guess here..."/>
+                    </div>
+                    <div>
+                        <button id="guess-button"class="to-guess" style="visibility: hidden" type="submit">Go Guess!</button>
+                        
+                        <p class="status" style="visibility:hidden" ></p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="list-panel">
+                <div id="valid-word-list">
+                    <!--valid word List-->
+                    <h3>Valide Word List</h3>
+                    <ul class="word-list"></ul>
+                </div>
+                <div id="accepted-guess-list">
+                    <h3>Previous Guesses</h3>
+                    <ul class="gussed-history"></ul>
+                   
+                </div>
+            </div>
+        </div>
+        <div class= "result-panel">
+            <div id="success-page" style="visibility:hidden">
+                <div>
+                        <h3>Congratulations! You win! </h3>
+                </div>
+                    <div class="start-new">
+                        <form action="/" method="GET">
+                            <button type="submit">Start New Game</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+       
+    </body>
+    
+    <script src="client-side.js"></script>
+</html>  
+   <!--
+    
+    getAcceptedGuesses: function(word) {
+      return `<ul>` +
+        word.guesses.map( guess => `
+          <li>
+            <div>
+              <div class="accepted-guess">
+                <div class="guessed-word">
+                  <span>Guessed Words: ${guess.guessed}</span>
+                </div>
+                <div class="number-match-letter">
+                  <span>Number of Matched Letters: ${guess.matchLetters}</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        `).join('') +
+      `</ul>`;
+    },
+    getNewGuess: function() {
+      return `
+        <div class="new-guess">
+          <form action="/" method="POST">
+            <div>
+            <input name="guessed" value="" placeholder="Please enter your guess here..."/>
+            </div>
+            <div>
+              <button type="submit">Go Guess!</button>
+            </div>
+          </form>
+        </div>
+      `;
+    },
+    startPage: function(word) {
+      return `
+          ${wordWeb.pageHeader()}
+          <div>
+            <h3>Game started, good luck!</h3>
+          </div>
+          ${wordWeb.getNewGuess()}
+          ${wordWeb.pageList(word)}
+          </body>
+        </html>
+      `;
+    },
+    guessPage: function(word) {
+      return `
+          ${wordWeb.pageHeader()}
+          <div>
+            <h3>There are ${word.lastMatch.count} letters matches. Let's continue!</h3>
+          </div>
+          ${wordWeb.getNewGuess()}
+          ${wordWeb.pageList(word)}
+          <div class="start-new">
+            <form action="/" method="GET">
+              <button type="submit">Give Up & Start New</button>
+            </form>
+          </div>
+          </body>
+        </html>
+      `;
+    },
+    invalidGuessPage: function(word) {
+      return `
+          ${wordWeb.pageHeader()}
+          <div>
+            <h3>Warning: Invalid words used in guessing! </h3>
+          </div>
+          ${wordWeb.getNewGuess()}
+          ${wordWeb.pageList(word)}
+          <div class="start-new">
+            <form action="/" method="GET">
+              <button type="submit">Give Up & Start New</button>
+            </form>
+          </div>
+          </body>
+        </html>
+      `;
+    },
+    successPage: function(word) {
+      return `
+          ${wordWeb.pageHeader()}
+          <div>
+            <h3>Congratulations! You win! There are ${word.lastMatch.count} letters matches. </h3>
+          </div>
+          <div class="start-new">
+            <form action="/" method="GET">
+              <button type="submit">Start New Game</button>
+            </form>
+          </div>
+          ${wordWeb.pageList(word)}
+          </body>
+        </html>
+-->

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css"/>
+    <title>My Recipes</title>
+    </head>
+    <body>
+        <div class="display-panel">
+            <div class="static-display">
+                <div>                    
+                    <h3 class="welcome">Welcome to My Recipes Site</h3>
+                    <p class="error-status"></p>
+                </div>
+            </div>
+            <div class="dynamic-display"></div>
+            <div class="action-display" style="visibility: visible">
+                <!-- add new form: -->
+                    <button id="add-new-page">Add a New Recipe</button>
+                <!-- back to home button: -->
+                <button id="home-button" style="visibility: hidden">Back to Home</button>
+            </div>
+        </div>
+    </body>
+    
+    <script src="client-side.js"></script>
+</html>  
+
+
+<!-- 
+    recipe list html:
+    <div id="recipe-list">
+        valid word List
+        <h3>Recipes List</h3>
+        <ul class="word-list"></ul>
+    </div>
+    content html:
+    <div id="content-list" style="visibility: hidden">
+        <h3> Current Recipe Content</h3>
+        <div class="current-recipe">
+            inside here are the:
+                    title
+                    ingredients
+                    instruction
+            
+        </div>
+    </div>
+-->

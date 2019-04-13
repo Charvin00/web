@@ -1,0 +1,108 @@
+input {
+    padding:10px;
+    width:50%;
+  }
+  
+  button {
+    font-weight: bold;
+    background-color: lightblue;
+    width: 150px;
+    height:30px;
+  }
+  
+  .new-guess {
+    text-align: center;
+  }
+  
+  h3 {
+    text-align: center;
+    background-color: lightgray;
+    width:100%;
+    color:black;
+  }
+  
+  .record-panel { 
+    border: 3px solid lightgray;
+    border-style: double;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .list-panel {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+  }
+  
+  #valid-word-list {
+    border: 1px solid;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 1%;
+    border-bottom-left-radius: 1%;
+    color:green;
+    overflow:hidden; 
+    overflow-y:scroll;
+    width:30%;
+  }
+  
+  #accepted-guess-list {
+    border: 1px solid;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
+    color:darkred;
+    overflow:hidden; 
+    overflow-y:scroll;
+    width:60%;
+  }
+  
+  .valid-word {
+    margin:auto;
+  }
+  
+  .valid-word:hover {
+    color:moccasin;
+    background-color: darkgreen;
+  }
+  
+  .accepted-guess {
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+  }
+  
+  .accepted-guess:hover {
+    color:moccasin;
+    background-color: darkred;
+  }
+  
+  .number-match-letter {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .turns {
+    color:mediumvioletred;
+    background-color:moccasin;
+    text-align: center;
+  }
+  
+  .start-new {
+    text-align:center;
+  }
+  
+  
+  
+  
+  

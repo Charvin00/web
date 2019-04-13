@@ -1,0 +1,6 @@
+# ignore node module web:
+/Guess Word SPA/node_modules
+
+/react-services/react-services-app/node_modules
+
+/Recipe Site SPA & MPA/node_modules
